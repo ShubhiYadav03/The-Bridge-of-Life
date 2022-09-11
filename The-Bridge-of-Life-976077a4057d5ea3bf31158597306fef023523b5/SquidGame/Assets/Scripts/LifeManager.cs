@@ -12,8 +12,8 @@ public class LifeManager : MonoBehaviour
     //public MouseLook mouse;
     public GameObject questionImg;
     //public AudioSource Door1_3;
-    //public AudioSource Correct;
-    //public AudioSource Incorrect;
+    public AudioSource Correct;
+    public AudioSource Incorrect;
     private int scoreCount=0;
     private int lifeRemaining=3;
     public Text scoreText;
@@ -38,7 +38,7 @@ public class LifeManager : MonoBehaviour
         if(strong){
             if (input.ToUpper() == actualAns.ToUpper())
             {
-                //Correct.Play();
+                Correct.Play();
                 scoreCount+=20;
                 scoreText.text="Score"+scoreCount;
                 //door.SetActive(false);
@@ -55,7 +55,7 @@ public class LifeManager : MonoBehaviour
                 
                 Debug.Log(input.ToUpper());
                 Debug.Log(actualAns.ToUpper());
-                //Incorrect.Play();
+                Incorrect.Play();
                 /*if(lifeRemaining<=0){
                     winText.text="Game Over!!";
                 }*/
@@ -64,7 +64,7 @@ public class LifeManager : MonoBehaviour
         else{
             if (input.ToUpper() == actualAns.ToUpper())
             {
-                //Correct.Play();
+                Correct.Play();
                 //scoreCount+=20;
                 //scoreText.text="Score"+scoreCount;
                 //glass.SetActive(false);
@@ -83,7 +83,7 @@ public class LifeManager : MonoBehaviour
                 reduceLife(lifeRemaining);
                 Debug.Log(input.ToUpper());
                 Debug.Log(actualAns.ToUpper());
-                //Incorrect.Play();
+                Incorrect.Play();
                 if(lifeRemaining<=0){
                   //  winText.text="Game Over!!";
                     glass.SetActive(false);
