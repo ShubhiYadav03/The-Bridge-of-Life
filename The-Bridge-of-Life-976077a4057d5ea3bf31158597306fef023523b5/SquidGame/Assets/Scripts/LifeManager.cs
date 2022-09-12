@@ -16,7 +16,7 @@ public class LifeManager : MonoBehaviour
     //public AudioSource Correct;
     //public AudioSource Incorrect;
     private int scoreCount=0;
-    private int lifeRemaining=2;
+    private int lifeRemaining=3;
     public Text scoreText;
     //public Text winText;
     [SerializeField] private List<Image> lifeImageList;
@@ -94,7 +94,7 @@ public class LifeManager : MonoBehaviour
                 Debug.Log(input.ToUpper());
                 Debug.Log(actualAns.ToUpper());
                 //Incorrect.Play();
-                if(lifeRemaining<0){
+                if(lifeRemaining<=0){
                   //  winText.text="Game Over!!";
                     glass.SetActive(false);
                 }
