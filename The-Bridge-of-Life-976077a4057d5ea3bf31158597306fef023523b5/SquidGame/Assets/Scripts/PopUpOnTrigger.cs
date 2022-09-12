@@ -14,13 +14,13 @@ public class PopUpOnTrigger : MonoBehaviour
             }
         }
 
-
-        void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
-            if (other.CompareTag("Player"))
-            {
-                questionImg.SetActive(false);
-               
-            }
+            questionImg.SetActive(false);
         }
+    }
+
+
 }

@@ -6,16 +6,17 @@ using TMPro;
 
 public class LifeManager : MonoBehaviour
 {
+    //private GameObject myButton;
     public TMP_InputField answer;
     public string actualAns;
     public GameObject glass;
     //public MouseLook mouse;
     public GameObject questionImg;
     //public AudioSource Door1_3;
-    public AudioSource Correct;
-    public AudioSource Incorrect;
+    //public AudioSource Correct;
+    //public AudioSource Incorrect;
     private int scoreCount=0;
-    private int lifeRemaining=3;
+    private int lifeRemaining=2;
     public Text scoreText;
     //public Text winText;
     [SerializeField] private List<Image> lifeImageList;
@@ -32,13 +33,22 @@ public class LifeManager : MonoBehaviour
      public void reduceLife(int index){
         lifeImageList[index].enabled=false;
     }
-    public void onSubmit()
+    void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Player"))
+        {
+            questionImg.SetActive(true);
+        }
+    }
+    public void onSubmit()
+    { 
+
+        //myButton = gameObject.GetComponent<Button>(); 
         input = answer.text.ToString(); 
         if(strong){
             if (input.ToUpper() == actualAns.ToUpper())
             {
-                Correct.Play();
+                //Correct.Play();
                 scoreCount+=20;
                 scoreText.text="Score"+scoreCount;
                 //door.SetActive(false);
@@ -55,7 +65,7 @@ public class LifeManager : MonoBehaviour
                 
                 Debug.Log(input.ToUpper());
                 Debug.Log(actualAns.ToUpper());
-                Incorrect.Play();
+                //Incorrect.Play();
                 /*if(lifeRemaining<=0){
                     winText.text="Game Over!!";
                 }*/
@@ -64,7 +74,7 @@ public class LifeManager : MonoBehaviour
         else{
             if (input.ToUpper() == actualAns.ToUpper())
             {
-                Correct.Play();
+                //Correct.Play();
                 //scoreCount+=20;
                 //scoreText.text="Score"+scoreCount;
                 //glass.SetActive(false);
@@ -83,8 +93,8 @@ public class LifeManager : MonoBehaviour
                 reduceLife(lifeRemaining);
                 Debug.Log(input.ToUpper());
                 Debug.Log(actualAns.ToUpper());
-                Incorrect.Play();
-                if(lifeRemaining<=0){
+                //Incorrect.Play();
+                if(lifeRemaining<0){
                   //  winText.text="Game Over!!";
                     glass.SetActive(false);
                 }
