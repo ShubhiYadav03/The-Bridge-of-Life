@@ -15,24 +15,33 @@ public class LifeManager : MonoBehaviour
     //public AudioSource Door1_3;
     //public AudioSource Correct;
     //public AudioSource Incorrect;
-    private int scoreCount=0;
-    private int lifeRemaining=3;
-    public Text scoreText;
+    private int scoreCount=20;
+    private int lifeRemaining=1;
+    //public Text scoreText;
     //public Text winText;
-    [SerializeField] private List<Image> lifeImageList;
+
    // public string strength;
     public bool strong=true;
-
+    [SerializeField] private ScoreManager sm;
+ 
     string input;
+    public Rigidbody rb;
+    private void Start()
+    {
+        rb.useGravity = false;
+        rb = GetComponent<Rigidbody>();
+    }
+    public void EnableGravity()
+    {
+        rb.useGravity = true;
+    }
 
-    public void startGame(){
+    /*public void start(){
         scoreCount=0;
         lifeRemaining=3;
         //winText.text="";
-    }
-     public void reduceLife(int index){
-        lifeImageList[index].enabled=false;
-    }
+    }*/
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -49,8 +58,8 @@ public class LifeManager : MonoBehaviour
             if (input.ToUpper() == actualAns.ToUpper())
             {
                 //Correct.Play();
-                scoreCount+=20;
-                scoreText.text="Score"+scoreCount;
+                sm.updatescore(scoreCount);
+                //scoreText.text="Score"+scoreCount;
                 //door.SetActive(false);
                 questionImg.SetActive(false);
                 Debug.Log("You did it!");
@@ -65,6 +74,8 @@ public class LifeManager : MonoBehaviour
                 
                 Debug.Log(input.ToUpper());
                 Debug.Log(actualAns.ToUpper());
+                questionImg.SetActive(false);
+
                 //Incorrect.Play();
                 /*if(lifeRemaining<=0){
                     winText.text="Game Over!!";
@@ -88,16 +99,17 @@ public class LifeManager : MonoBehaviour
             }
             else
             {
-
-                lifeRemaining--;
-                reduceLife(lifeRemaining);
+                if (sm.lifeCount(lifeRemaining) >= 3)
+                {
+                    sm.loseText.enabled=true;
+                    questionImg.SetActive(false);
+                    glass.SetActive(false);
+                }
+                
                 Debug.Log(input.ToUpper());
                 Debug.Log(actualAns.ToUpper());
                 //Incorrect.Play();
-                if(lifeRemaining<=0){
-                  //  winText.text="Game Over!!";
-                    glass.SetActive(false);
-                }
+                
             }
         }
     }
