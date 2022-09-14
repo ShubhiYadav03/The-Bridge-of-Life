@@ -29,11 +29,13 @@ public class LifeManager : MonoBehaviour
     private void Start()
     {
         rb.useGravity = false;
-        rb = GetComponent<Rigidbody>();
+        
     }
     public void EnableGravity()
     {
+       // rb = GetComponent<Rigidbody>();
         rb.useGravity = true;
+        
     }
 
     /*public void start(){
@@ -48,9 +50,14 @@ public class LifeManager : MonoBehaviour
         {
             sm.leftButton.SetActive(false);
             sm.rightButton.SetActive(false);
-            questionImg.SetActive(true);
+            Invoke("ImgActive",1);
         }
     }
+
+    void ImgActive(){
+        questionImg.SetActive(true);
+    }
+
     public void onSubmit()
     { 
 
@@ -107,8 +114,10 @@ public class LifeManager : MonoBehaviour
                 if (sm.lifeCount(lifeRemaining) >= 3)
                 {
                     EnableGravity();
+                    sm.loseScore.text = "Total Score : "+ sm.currentscore.ToString();
                     sm.rightButton.SetActive(false);
                     sm.leftButton.SetActive(false);
+                    sm.loseText.SetActive(true);
                     //questionImg.SetActive(false);
                     glass.SetActive(false);
                 }
@@ -120,6 +129,8 @@ public class LifeManager : MonoBehaviour
             }
            
         }
+
+        
         
     }
 

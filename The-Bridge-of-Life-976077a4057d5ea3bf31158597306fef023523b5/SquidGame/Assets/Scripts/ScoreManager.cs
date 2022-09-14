@@ -7,13 +7,15 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    private int currentscore;
+    public int currentscore;
     private int currentLife;
-    public Text scoretext;
+    public TextMeshProUGUI scoretext;
     public GameObject leftButton;
     public GameObject rightButton;
     [SerializeField] private List<Image> lifeImageList;
-    public TextMeshProUGUI loseText;
+    public GameObject loseText;
+    public TextMeshProUGUI loseScore;
+
     public void updatescore(int score)
     {
         currentscore += score;
@@ -29,7 +31,7 @@ public class ScoreManager : MonoBehaviour
             leftButton.SetActive(false);
 
             Debug.Log("Lost");
-            loseText.enabled = true;
+            //loseText.enabled = true;
             return currentLife;
         }
         reduceLife(currentLife);

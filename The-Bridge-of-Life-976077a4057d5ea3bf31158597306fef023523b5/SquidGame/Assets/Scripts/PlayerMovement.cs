@@ -1,8 +1,8 @@
 ﻿//using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.UI;
-//using TMPro;
+using UnityEngine.UI;
+using TMPro;
 //[RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,8 +11,17 @@ public class PlayerMovement : MonoBehaviour
     private int leftRow = 0;
     private int rightRow = 0;
     public GameObject player;
+    public GameObject winImg;
+    public TextMeshProUGUI winScore;
+    [SerializeField] private ScoreManager sm;
+
     public void onSubmitLeft()
     {
+        if(leftRow == 10){
+            sm.rightButton.SetActive(false);
+            sm.leftButton.SetActive(false);
+            Invoke("Win", 2);
+        }
         player.transform.position = leftGlasses[leftRow].transform.position;
         leftRow++;
         rightRow++;
@@ -20,11 +29,20 @@ public class PlayerMovement : MonoBehaviour
 
     public void onSubmitRight()
     {
+        if(rightRow == 10){
+            sm.rightButton.SetActive(false);
+            sm.leftButton.SetActive(false);
+            Invoke("Win", 2);
+        }
         player.transform.position = rightGlasses[rightRow].transform.position;
         leftRow++;
         rightRow++;
     }
 
+    void Win(){
+        winScore.text = "Total Score : "+ sm.currentscore.ToString();
+        winImg.SetActive(true);
+    }
 
 }
 
