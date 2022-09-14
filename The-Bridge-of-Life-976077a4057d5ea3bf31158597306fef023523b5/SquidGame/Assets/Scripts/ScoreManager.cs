@@ -10,6 +10,8 @@ public class ScoreManager : MonoBehaviour
     private int currentscore;
     private int currentLife;
     public Text scoretext;
+    public GameObject leftButton;
+    public GameObject rightButton;
     [SerializeField] private List<Image> lifeImageList;
     public TextMeshProUGUI loseText;
     public void updatescore(int score)
@@ -23,6 +25,9 @@ public class ScoreManager : MonoBehaviour
     {
         if (currentLife >= 3)
         {
+            rightButton.SetActive(false);
+            leftButton.SetActive(false);
+
             Debug.Log("Lost");
             loseText.enabled = true;
             return currentLife;

@@ -46,6 +46,8 @@ public class LifeManager : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            sm.leftButton.SetActive(false);
+            sm.rightButton.SetActive(false);
             questionImg.SetActive(true);
         }
     }
@@ -54,6 +56,9 @@ public class LifeManager : MonoBehaviour
 
         //myButton = gameObject.GetComponent<Button>(); 
         input = answer.text.ToString(); 
+        questionImg.SetActive(false);
+        sm.leftButton.SetActive(true);
+        sm.rightButton.SetActive(true);
         if(strong){
             if (input.ToUpper() == actualAns.ToUpper())
             {
@@ -61,7 +66,7 @@ public class LifeManager : MonoBehaviour
                 sm.updatescore(scoreCount);
                 //scoreText.text="Score"+scoreCount;
                 //door.SetActive(false);
-                questionImg.SetActive(false);
+             //   questionImg.SetActive(false);
                 Debug.Log("You did it!");
                 // MyAnimationController.SetBool("open", true);
                 //Cursor.lockState = CursorLockMode.Locked;
@@ -74,7 +79,7 @@ public class LifeManager : MonoBehaviour
                 
                 Debug.Log(input.ToUpper());
                 Debug.Log(actualAns.ToUpper());
-                questionImg.SetActive(false);
+               // questionImg.SetActive(false);
 
                 //Incorrect.Play();
                 /*if(lifeRemaining<=0){
@@ -89,7 +94,7 @@ public class LifeManager : MonoBehaviour
                 //scoreCount+=20;
                 //scoreText.text="Score"+scoreCount;
                 //glass.SetActive(false);
-                questionImg.SetActive(false);
+               // questionImg.SetActive(false);
                 Debug.Log("You did it!");
                 // MyAnimationController.SetBool("open", true);
                 //Cursor.lockState = CursorLockMode.Locked;
@@ -101,17 +106,18 @@ public class LifeManager : MonoBehaviour
             {
                 if (sm.lifeCount(lifeRemaining) >= 3)
                 {
-                    sm.loseText.enabled=true;
-                    questionImg.SetActive(false);
+                    //questionImg.SetActive(false);
                     glass.SetActive(false);
                 }
-                
+               // questionImg.SetActive(false);
                 Debug.Log(input.ToUpper());
                 Debug.Log(actualAns.ToUpper());
                 //Incorrect.Play();
                 
             }
+           
         }
+        
     }
 
 }
