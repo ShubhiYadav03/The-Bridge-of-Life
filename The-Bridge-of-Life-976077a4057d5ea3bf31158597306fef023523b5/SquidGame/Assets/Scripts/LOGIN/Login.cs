@@ -17,6 +17,7 @@ public class Login : MonoBehaviour
     [SerializeField] private TMP_InputField passwordInputField;
     [SerializeField] private MainMenuManager mainMenuManager;
 
+    public static string uname;
     public void OnLoginClick()
     {
         alertText.text = "Signing in...";
@@ -38,6 +39,7 @@ public class Login : MonoBehaviour
 
         string username = usernameInputField.text;
         string password = passwordInputField.text;
+        uname = username;
 
         if (username.Length < 3 || username.Length > 25)
         {
