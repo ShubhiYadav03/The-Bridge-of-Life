@@ -25,6 +25,6 @@ public class MainMenuManager : MonoBehaviour
     public IEnumerator LaunchGame()
     {
         yield return new WaitForSeconds(0.4f);
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(3);
     }
 }
