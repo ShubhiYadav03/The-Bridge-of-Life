@@ -7,6 +7,12 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
+    public AudioSource squidgame;
+    public AudioSource strongglass;
+    public AudioSource weakglass;
+    public AudioSource wronganswer;
+    public AudioSource correct;
+    public AudioSource wronganswerlifesaved;
     public int currentscore;
     private int currentLife;
     public TextMeshProUGUI scoretext;

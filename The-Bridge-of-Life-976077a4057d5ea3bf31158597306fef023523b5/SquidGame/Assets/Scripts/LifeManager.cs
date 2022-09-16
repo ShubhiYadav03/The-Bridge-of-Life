@@ -6,6 +6,7 @@ using TMPro;
 
 public class LifeManager : MonoBehaviour
 {
+    
     //private GameObject myButton;
     public TMP_InputField answer;
     public string actualAns;
@@ -50,10 +51,17 @@ public class LifeManager : MonoBehaviour
         {
             sm.leftButton.SetActive(false);
             sm.rightButton.SetActive(false);
-            Invoke("ImgActive",1);
+            if (strong)
+            {
+                sm.strongglass.Play();
+            }
+            else
+            {
+                sm.weakglass.Play();
+            }
+            Invoke("ImgActive", 1);
         }
     }
-
     void ImgActive(){
         questionImg.SetActive(true);
     }
@@ -69,7 +77,7 @@ public class LifeManager : MonoBehaviour
         if(strong){
             if (input.ToUpper() == actualAns.ToUpper())
             {
-                //Correct.Play();
+                sm.correct.Play();
                 sm.updatescore(scoreCount);
                 //scoreText.text="Score"+scoreCount;
                 //door.SetActive(false);
@@ -86,7 +94,8 @@ public class LifeManager : MonoBehaviour
                 
                 Debug.Log(input.ToUpper());
                 Debug.Log(actualAns.ToUpper());
-               // questionImg.SetActive(false);
+                sm.wronganswerlifesaved.Play();
+                // questionImg.SetActive(false);
 
                 //Incorrect.Play();
                 /*if(lifeRemaining<=0){
@@ -97,11 +106,11 @@ public class LifeManager : MonoBehaviour
         else{
             if (input.ToUpper() == actualAns.ToUpper())
             {
-                //Correct.Play();
+                sm.correct.Play();
                 //scoreCount+=20;
                 //scoreText.text="Score"+scoreCount;
                 //glass.SetActive(false);
-               // questionImg.SetActive(false);
+                // questionImg.SetActive(false);
                 Debug.Log("You did it!");
                 // MyAnimationController.SetBool("open", true);
                 //Cursor.lockState = CursorLockMode.Locked;
@@ -124,8 +133,8 @@ public class LifeManager : MonoBehaviour
                // questionImg.SetActive(false);
                 Debug.Log(input.ToUpper());
                 Debug.Log(actualAns.ToUpper());
-                //Incorrect.Play();
-                
+                sm.wronganswer.Play();
+
             }
            
         }
