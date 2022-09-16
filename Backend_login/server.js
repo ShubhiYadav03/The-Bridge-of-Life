@@ -13,6 +13,7 @@ mongoose.connect(keys.mongoURI, { useNewUrlParser: true, useUnifiedTopology: tru
 //Setup database models
 require('./model/Account');
 require('./model/Score')
+
 //setup routes
 require('./routes/authenticationRoutes')(app);
 require('./routes/ScoreAuth')(app);

@@ -1,43 +1,44 @@
 const mongoose = require('mongoose');
-
 const Score = mongoose.model('score');
 
 module.exports = app => {
-    app.post('/score', async (req, res) => {
+    app.get('/score', async (req, res) => {
 
-        var response = {};
+        //var response = {};
 
-        const { rUsername, rScore } = req.body;
+        const { rUsername, rScore } = req.query;
+        console.log(rUsername);
+        console.log(rScore);
+
         if (rUsername == null || rScore == null) {
-            response.code = 1;
-            response.msg = "Invalid crededential"
-            res.send(response);
-            return;
+            //response.code = 1;
+            //response.msg = "Invalid crededential"
+            //res.send(response);
+
+            console.log("Invalid credentials");
+            return res.send("Invalid Credential");
         }
 
-        var userAccount = await Score.findOne({ username: rUsername });
-        if (userAccount != null) {
+        var userScore = await Score.findOne({ username: rUsername });
+        if (userScore == null) {
+            console.log("Save Score...");
 
-            userAccount.lastAuthentication = Date.now();
-            await userAccount.save();
+            var newScore = new Score({
+                username: rUsername,
+                score: rScore,
+            });
+            await newScore.save();
 
-            response.code = 0;
-            response.msg = "Account found for score";
-            response.data = userAccount;
-            res.send(response);
-
-            console.log("Retriving account...")
-            res.send(userAccount);
-
-            return;
-
+            //response.code = 0;
+            //response.msg = "Account found";
+            //response.data = userScore;
+            //res.send(response);
+            return res.send(newScore);
+        } else{
+            console.log("Score already submitted");
+            return res.send(rScore);
         }
-
-        console.log(" wala")
-        response.code = 1;
-        response.msg = "Invalid crededential";
-        res.send(response);
-        return;
-
+        //res.send("Invalid credentials");
+        //return;
     });
 }

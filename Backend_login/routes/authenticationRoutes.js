@@ -28,7 +28,7 @@ module.exports = app => {
                 res.send(response);
 
                 console.log("Retriving account...")
-                res.send(userAccount);
+                //res.send(userAccount);
 
                 return;
             }
@@ -78,8 +78,6 @@ module.exports = app => {
         }
 
         return;
-
-
     });
 
 }
