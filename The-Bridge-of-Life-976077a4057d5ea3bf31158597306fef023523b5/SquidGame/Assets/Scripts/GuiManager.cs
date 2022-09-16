@@ -27,6 +27,6 @@ public class GuiManager : MonoBehaviour
 
     public void OnConfirmMenu()
     {
-        SceneManager.LoadSceneAsync("menu");
+        SceneManager.LoadScene(3);
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Login : MonoBehaviour
 {
@@ -81,6 +82,7 @@ public class Login : MonoBehaviour
             {
                 ActivateButtons(false);
                 alertText.text = "Welcome ";
+                SceneManager.LoadScene(3);
                 mainMenuManager.OnPlayPressed();
             }
             else
