@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class Login : MonoBehaviour
 {
-    [SerializeField] private string LoginEndpoint = "http://127.0.0.1:13098/account/login";
-    [SerializeField] private string CreateEndpoint = "http://127.0.0.1:13098/account/create";
+    [SerializeField] private string LoginEndpoint = "https://bol-server.onrender.com/account/login";
+    [SerializeField] private string CreateEndpoint = "https://bol-server.onrender.com/account/create";
 
     [SerializeField] private TextMeshProUGUI alertText;
     [SerializeField] private Button loginButton;

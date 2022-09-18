@@ -5,10 +5,11 @@ using TMPro;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
-    [SerializeField] private string ScoreEndpoint = "http://127.0.0.1:13098/score";
+    [SerializeField] private string ScoreEndpoint = "https://bol-server.onrender.com/score";
     [SerializeField] private ScoreManager sm;
 
 
@@ -17,6 +18,7 @@ public class Score : MonoBehaviour
     public void OnEndClick()
     {
         StartCoroutine(GetScore());
+        SceneManager.LoadScene(4);
     }
 
     private IEnumerator GetScore()
