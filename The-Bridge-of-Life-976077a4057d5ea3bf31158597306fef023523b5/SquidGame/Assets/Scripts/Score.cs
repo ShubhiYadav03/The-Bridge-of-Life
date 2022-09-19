@@ -20,6 +20,11 @@ public class Score : MonoBehaviour
         StartCoroutine(GetScore());
         SceneManager.LoadScene(4);
     }
+    public void OnEnd()
+    {
+        StartCoroutine(GetScore());
+        Application.Quit();
+    }
 
     private IEnumerator GetScore()
     {
