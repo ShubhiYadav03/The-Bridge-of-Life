@@ -18,7 +18,10 @@ public class Wait : MonoBehaviour
 
         SceneManager.LoadScene(2);
     }
-    
+    public void Skip()
+    {
+        SceneManager.LoadScene(2);
+    }
     // Update is called once per frame
   
 }

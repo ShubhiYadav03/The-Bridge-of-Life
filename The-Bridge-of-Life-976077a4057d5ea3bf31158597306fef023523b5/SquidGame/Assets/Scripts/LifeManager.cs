@@ -126,9 +126,10 @@ public class LifeManager : MonoBehaviour
                     sm.loseScore.text = "Total Score : "+ sm.currentscore.ToString();
                     sm.rightButton.SetActive(false);
                     sm.leftButton.SetActive(false);
-                    sm.loseText.SetActive(true);
-                    //questionImg.SetActive(false);
                     glass.SetActive(false);
+                    Invoke("showLose", 2);
+                    //questionImg.SetActive(false);
+                    
                 }
                // questionImg.SetActive(false);
                 Debug.Log(input.ToUpper());
@@ -139,8 +140,15 @@ public class LifeManager : MonoBehaviour
            
         }
 
+
         
         
+    }
+
+    void showLose(){
+        
+        sm.loseText.SetActive(true);
+        Debug.Log("here");
     }
 
 }
