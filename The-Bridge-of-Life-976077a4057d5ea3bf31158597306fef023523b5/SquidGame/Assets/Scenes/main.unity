@@ -8682,7 +8682,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b8567b80e7da6a54888829cd80b01d40,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.98999
+      value: 11.14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8567b80e7da6a54888829cd80b01d40,
         type: 3}
@@ -8692,7 +8692,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b8567b80e7da6a54888829cd80b01d40,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -34.789993
+      value: -30.13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b8567b80e7da6a54888829cd80b01d40,
         type: 3}
@@ -8749,8 +8749,44 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 8175190481169557992, guid: b8567b80e7da6a54888829cd80b01d40,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d88ee601ae3bb4d4a9385f5002f507cb, type: 2}
+    - target: {fileID: 8175190481169557992, guid: b8567b80e7da6a54888829cd80b01d40,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bb6e2b3ad66d664094ce58c0b0adb79, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8567b80e7da6a54888829cd80b01d40, type: 3}
+--- !u!1 &1153050103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b8567b80e7da6a54888829cd80b01d40,
+    type: 3}
+  m_PrefabInstance: {fileID: 1153050102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1153050104
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153050103}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 45d480461bbdc704587e117329ce8e69, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1177139542
 PrefabInstance:
   m_ObjectHideFlags: 0
