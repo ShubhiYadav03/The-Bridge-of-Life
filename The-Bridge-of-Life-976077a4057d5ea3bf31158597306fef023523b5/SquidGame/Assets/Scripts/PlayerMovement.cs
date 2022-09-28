@@ -14,13 +14,17 @@ public class PlayerMovement : MonoBehaviour
     public GameObject winImg;
     public TextMeshProUGUI winScore;
     [SerializeField] private ScoreManager sm;
+    public Animator camAnimate;
+    public Animator DoorAnimate;
 
     public void onSubmitLeft()
     {
         if(leftRow == 10){
             sm.rightButton.SetActive(false);
             sm.leftButton.SetActive(false);
-            Invoke("Win", 2);
+            camAnimate.SetTrigger("Win");
+            DoorAnimate.SetTrigger("Open");
+            Invoke("Win", 5);
         }
         player.transform.position = leftGlasses[leftRow].transform.position;
         leftRow++;
