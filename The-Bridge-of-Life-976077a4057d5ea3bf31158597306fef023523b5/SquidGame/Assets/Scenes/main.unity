@@ -358,22 +358,22 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 304.4746
+      value: 310.6303
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 398.329
+      value: 478.3526
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.5882
+      value: -0.6925
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -24.014158
+      value: 35.657486
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -383,12 +383,12 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.48771718
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.41430128
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -961,19 +961,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1480250662676377525}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &143655394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143655392}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 0
 --- !u!114 &143655395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -987,7 +974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 886140979}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -996,7 +983,7 @@ MonoBehaviour:
   m_ScrollSensitivity: 1
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 942405268}
   m_HorizontalScrollbarVisibility: 0
   m_VerticalScrollbarVisibility: 0
   m_HorizontalScrollbarSpacing: 0
@@ -1004,6 +991,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &143655399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143655392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
 --- !u!1 &147596762
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,7 +1340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1633579515}
-  actualAns: 9
+  actualAns: C
   glass: {fileID: 186600257}
   questionImg: {fileID: 248079514}
   strong: 0
@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1330959411}
-  actualAns: 9
+  actualAns: b
   glass: {fileID: 209619572}
   questionImg: {fileID: 1686368596}
   strong: 0
@@ -1561,12 +1561,22 @@ PrefabInstance:
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_text
-      value: FGHEDFBEFNRFJBRFHBFJCEFJCGVEGCEGDXEHFCHYEVHEBDCJEFVBHYREG
+      value: "The player is provided with different amounts of prize money\u201Cpoints\u201D
+        and a target value, every time he steps into a glass pane. He needs to find
+        out the length of the shortest subarray of  \u201Cpoints\u201D having sum
+        of at least target . \r\nIf target is 170 and points is [45,67,89,74,78,
+        33,50]. Determine the possible length of subarray the player needs to answer.\r\n\nA)
+        2\r\nB) 3\r\nC) 1\r\nD) 0"
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_fontSize
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 20.890808
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -1682,22 +1692,22 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 195.8244
+      value: 202.788
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 71.0962
+      value: 468.7516
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.4105988
+      value: -4.0729
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00019073486
+      value: 44.13987
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -1707,7 +1717,12 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.43473807
+      objectReference: {fileID: 0}
+    - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.000000024425796
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -2064,22 +2079,22 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 246.29
+      value: 210.3443
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 487.8219
+      value: 487.822
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.00076675415
+      value: -5.2297
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -46.914787
+      value: -46.9148
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -2294,59 +2309,13 @@ PrefabInstance:
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_text
-      value: 'Input: word1 = "dalgona", word2 = "alra"
-
-        
-
-        int minDistanceToCrossBOL(string
-        word1, string word2) {
-
-        int m = word1.size(), n = word2.size(),
-        pre;
-
-        vector<int> cur(n + 1, 0);
-
-        for (int j = 1; j <=
-        n; j++) {
-
-        cur[j] = j;
-
-        }
-
-        for (int i = 1; i <=
-        m; i++) {
-
-        pre = cur[0];
-
-        cur[0] = i;
-
-        for (int
-        j = 1; j <= n; j++) {
-
-        int temp = cur[j];
-
-        if (word1[i
-        - 1] == word2[j - 1]) {
-
-        cur[j] = pre;
-
-        } else {
-
-        cur[j]
-        = min(pre, min(cur[j - 1], cur[j])) + 1;
-
-        }
-
-        pre = temp;
-
-        }
-
-        }
-
-        return
-        cur[n];
-
-        }'
+      value: "Input: \nword1 = \"dalgona\", \nword2 = \"alra\"\n\nint minDistanceToCrossBOL(string
+        word1, string word2) {\nint m = word1.size();\nint n = word2.size(), pre;\nvector<int>
+        cur(n + 1, 0);\nfor (int j = 1; j <= n; j++) {\ncur[j] = j;\n}\nfor (int
+        i = 1; i <= m; i++) {\npre = cur[0];\ncur[0] = i;\nfor (int j = 1; j <= n;
+        j++) {\nint temp = cur[j];\nif (word1[i - 1] == word2[j - 1]) {\ncur[j] =
+        pre;\n} else {\ncur[j] = min(pre, min(cur[j - 1], cur[j])) + 1;\n}\npre =
+        temp;\n}\n}\nreturn cur[n];\n}\n\nWhat will be the output?"
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -2477,17 +2446,17 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 570.2749
+      value: 648.5286
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.4309006
+      value: -1.4309
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -58.913513
+      value: -70.29996
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -2502,7 +2471,7 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.6344222
+      value: 0.67435366
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -2678,6 +2647,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 599111918}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &251123776 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1669130674895161208, guid: acbda402833a95640b79ed3b0164d9ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1177139542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &269850600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,7 +2823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1152263774}
-  actualAns: 9
+  actualAns: c
   glass: {fileID: 275493743}
   questionImg: {fileID: 1695200064}
   strong: 0
@@ -13434,7 +13415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1900544060}
-  actualAns: 9
+  actualAns: b
   glass: {fileID: 423778542}
   questionImg: {fileID: 2095354906}
   strong: 1
@@ -13768,10 +13749,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1802130616}
-  actualAns: 9
+  actualAns: a
   glass: {fileID: 468000213}
   questionImg: {fileID: 1393228625}
-  strong: 0
+  strong: 1
   sm: {fileID: 369034387}
   rb: {fileID: 1153050106}
 --- !u!1 &476081418
@@ -15466,7 +15447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 334492429}
-  actualAns: 9
+  actualAns: b
   glass: {fileID: 497280992}
   questionImg: {fileID: 341237774}
   strong: 0
@@ -15714,7 +15695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1145031000}
-  actualAns: 9
+  actualAns: a
   glass: {fileID: 540913374}
   questionImg: {fileID: 896658239}
   strong: 0
@@ -15783,8 +15764,8 @@ PrefabInstance:
       propertyPath: m_text
       value: "Consider a random glass of a bridge A that takes values +1 and \u22121
         with probability 0.5 each. The values of the cumulative distribution function
-        F(a) at a = \u22121 and +1 are\r\n0 and 0.5\r\n0 and 1\r\n0.5 and 1\r\n0.25
-        and 0.75"
+        F(a) at a = \u22121 and +1 are\r\nA) 0 and 0.5\r\nB) 0 and 1\r\nC) 0.5 and
+        1\r\nD) 0.25 and 0.75"
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -15930,7 +15911,7 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -5.9421
+      value: 5.9418416
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -15940,12 +15921,12 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.8510423
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.14895773
+      value: 0.000000047815874
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -16404,7 +16385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Content: {fileID: 0}
+  m_Content: {fileID: 1382885094}
   m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
@@ -16414,7 +16395,7 @@ MonoBehaviour:
   m_ScrollSensitivity: 1
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 251123776}
   m_HorizontalScrollbarVisibility: 0
   m_VerticalScrollbarVisibility: 0
   m_HorizontalScrollbarSpacing: 0
@@ -16422,6 +16403,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &632571622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632571616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
 --- !u!1 &637772843 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4906838889796845047, guid: 47387c1dc8f15154cb743f6576e72c57,
@@ -16441,7 +16435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1429861724}
-  actualAns: 9
+  actualAns: 4
   glass: {fileID: 637772843}
   questionImg: {fileID: 289897326}
   strong: 0
@@ -16998,19 +16992,19 @@ PrefabInstance:
 
         In-Order: S Q U I D G A M E
 
-        Post-Order: S
-        U Q D I A E M G
+        Post-Order: S U
+        Q D I A E M G
 
-        
+
 
         a) GQSUDIEAM
 
         b) GIMQDAESU
 
-        c)
-        GIQSUDMAE
+        c) GIQSUDMAE
 
-        d) GSUDAEQIM'
+        d)
+        GSUDAEQIM'
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -17146,22 +17140,22 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 191.1434
+      value: 195.5895
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 197.2648
+      value: 217.2721
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.5037
+      value: -6.8568
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.6358285
+      value: -7.5478473
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -17171,12 +17165,12 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.8798492
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.000000049434398
+      value: 0.18188101
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -17648,12 +17642,12 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.6813536
+      value: 0.6813535
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.000000039475026
+      value: 0.000000039475022
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -17995,7 +17989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 740334946}
-  actualAns: 9
+  actualAns: c
   glass: {fileID: 781213666}
   questionImg: {fileID: 582788951}
   strong: 1
@@ -18568,6 +18562,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a3e4f250b98e6747ae4ce0e81926b52, type: 3}
+--- !u!114 &942405268 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1669130674895161208, guid: acbda402833a95640b79ed3b0164d9ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1480250662676377525}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &951772684 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 924641160432809928, guid: acbda402833a95640b79ed3b0164d9ae,
@@ -19150,13 +19156,18 @@ PrefabInstance:
         str. However, he realized that he forgot to add commas to separate the different
         numbers. He has to keep in mind that the list of integers was non-decreasing
         and that no integer had leading zeros.\r\nWhat is the possible number of
-        integers that he has written down to get the string str.\r\nstr=\u201D149378\u201D\r\nA)
+        integers that he has written down to get the string str.\r\n\nstr = \u201D149378\u201D\r\n\nA)
         2\r\nB) 3\r\nC) 4\r\nD) 1"
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_fontSize
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 11.250488
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -19272,22 +19283,22 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 204.1209
+      value: 205.6017
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 325.8472
+      value: 385.0771
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.758
+      value: -2.4044
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 23.345852
+      value: 31.964392
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -19297,7 +19308,7 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5925214
+      value: 0.5150444
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -19553,22 +19564,13 @@ PrefabInstance:
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_text
-      value: 'Post every game played in the Squid Game multiverse, the prize money
-        is upped by 100 million Wons. For a general computation, Wons are to be converted
-        to USD. 1 United States Dollar amounts to 1427 Korean Wons. The denominations
-        available in the form of coins are 1, 5, 10, 50, 100 and 500. The minimum
-        number of won coins required to make a dollar are?
-
-        
-
-        A)
-        11
-
-        B) 15
-
-        C) 9
-
-        D) 14'
+      value: "Consider the glass panes on which you stand to be nodes. All these
+        nodes (let there be 2*n number of glass panes, n on left and n on right)
+        are linked by this bridge, similar to a linked list. The front man is supposed
+        to find the mid glass pane of the bridge of life to add an extra obstacle.
+        Which algorithm is best suited to find it?\r\n\nA)        Kadane\u2019s Algorithm\r\nB)       
+        Floyd\u2019s Algorithm\r\nC)        Euclid\u2019s Algorithm\r\nD)       
+        Brent\u2019s Algorithm"
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -19724,7 +19726,7 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.40930927
+      value: 0.40930933
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -19966,7 +19968,6 @@ PrefabInstance:
         with squid function h(k)=k mod 10, and linear probing. After 6 players taking
         their place in the empty glass, the current bridge becomes
 
-        
 
         0
 
@@ -19983,23 +19984,21 @@ PrefabInstance:
 
         6 46
 
-        7
-        33
+        7 33
 
         8
 
         9
 
-        
 
-        How many different insertion
-        sequences of the key players are using the same squid function and linear
-        probing will result in the squid glass bridge shown above?
+        How
+        many different insertion sequences of the key players are using the same
+        squid function and linear probing will result in the squid glass bridge shown
+        above?
 
         A) 10
 
-        B)
-        20
+        B) 20
 
         C) 30
 
@@ -20141,22 +20140,22 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 198.4747
+      value: 200.0136
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 597.8137
+      value: 679.3763
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.4036999
+      value: -2.1798
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 62.919918
+      value: 74.78787
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -20166,12 +20165,12 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.35045466
+      value: 0.31220353
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.000000017541181
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -20186,7 +20185,7 @@ PrefabInstance:
     - target: {fileID: 5746248630461317816, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 8.8592
+      value: 4.6268
       objectReference: {fileID: 0}
     - target: {fileID: 5746248630461317816, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -20196,12 +20195,12 @@ PrefabInstance:
     - target: {fileID: 5746248630461317816, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -61.4826
+      value: -63.598793
       objectReference: {fileID: 0}
     - target: {fileID: 5746248630461317816, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3.6842
+      value: 3.6841023
       objectReference: {fileID: 0}
     - target: {fileID: 6261232179418946388, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -20701,17 +20700,22 @@ PrefabInstance:
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_text
-      value: "Examine the following code and find out the correct output sequence\u2013\r\nclass
-        Solution:\r\ndef isMatch(self, s: str, p: str) -> bool:\r\ns_len, p_len =
-        len(s), len(p)\r\ns_idx = p_idx = 0\r\nstar_idx = s_tmp_idx = -1\r\n\r\nwhile
-        s_idx < s_len:\r\nif p_idx < p_len and p[p_idx] in ['?', s[s_idx]]:\r\ns_idx
-        += 1\r\np_idx += 1\r\n\r\n\r\nelif p_idx < p_len and p[p_idx] == '*':\r\nstar_idx
-        = p_idx\r\ns_tmp_idx = s_idx\r\np_idx += 1\r\n\r\nelif star_idx == -1:\r\nreturn
-        False\r\n\r\np_idx = star_idx + 1\r\ns_idx = s_tmp_idx + 1\r\ns_tmp_idx =
-        s_idx\r\n\r\n\r\nreturn all(p[i] == '*' for i in range(p_idx, p_len))\r\n\r\nInput:\r\ns=\"\"Death\"\"
-        p=?e??\r\ns= \"\"Dalgona\"\" p= *\r\ns=\"\"Game\"\" p='m'\r\n\r\nA) True,
-        false, true\r\nB) False, true, false\r\nC) False, false, true\r\nD) True,
-        false, false"
+      value: 'Post every game played in the Squid Game multiverse, the prize money
+        is upped by 100 million Wons. For a general computation, Wons are to be converted
+        to USD. 1 United States Dollar amounts to 1427 Korean Wons. The denominations
+        available in the form of coins are 1, 5, 10, 50, 100 and 500. The minimum
+        number of won coins required to make a dollar are?
+
+
+
+        A) 11
+
+        B)
+        15
+
+        C) 9
+
+        D) 14'
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -20721,7 +20725,7 @@ PrefabInstance:
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_margin.w
-      value: -42.51306
+      value: 35.369625
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -20842,22 +20846,22 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 256.44
+      value: 197.9043
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 937.3361
+      value: 460.1569
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.00017547607
+      value: -2.7179
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -106.03668
+      value: 42.889256
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -20867,12 +20871,12 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.9785093
+      value: 0.44181404
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.74642265
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -21143,10 +21147,10 @@ PrefabInstance:
 
         B) 0
 
-        C)
-        31
+        C) 31
 
-        D) 2'
+        D)
+        2'
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -21272,7 +21276,7 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -22.0681
+      value: 22.067501
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -21282,12 +21286,12 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.6031817
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.39681828
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -21778,7 +21782,40 @@ PrefabInstance:
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_text
-      value: fgggggggggggggggggggggggggggggggggggggggggggggggggggggg
+      value: 'The player is provided with n number of glass panes and he has to answer
+        the questions correctly in order to maximize the prize money. He is provided
+        with a 0-indexed integer array questions of size n, where questions[i] is
+        the number of questions answered already by the player in the ith pane. Questions
+        that are already answered cannot be visited again. He is also given another
+        integer newquestions, which is the maximum number of questions that needs
+        to be answered. He has also given the integers target, full, and partial.
+
+        The
+        pane is lucky if player answers atleast the target questions correctly. The
+        total prize money  is then determined as the sum of the following:
+
+        number
+        lucky panes multiplied by full.
+
+        The minimum number of questions 
+        in any of the unlucky panes  multiplied by partial.
+
+        If questions
+        = [23,42,15,12], newquestions = 8, target = 19, full = 12, partial = 1
+
+        Determine
+        the maximum prize money that player can get after answering at most newquestions
+        questions.
+
+        A) 78
+
+        B) 55
+
+        C) 52
+
+        D) 77
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -22283,38 +22320,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1669130674895161208, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
+      propertyPath: m_Size
+      value: 0.5279488
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669130674895161208, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_Value
+      value: -0.00000018375421
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669130674895161208, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
       propertyPath: m_Direction
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2646878668494186653, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_text
-      value: 'Post every game played in the Squid Game multiverse, the prize money
-        is upped by 100 million Wons. For a general computation, Wons are to be converted
-        to USD. 1 United States Dollar amounts to 1427 Korean Wons. The denominations
-        available in the form of coins are 1, 5, 10, 50, 100 and 500. The minimum
-        number of won coins required to make a dollar are?
-
-        
-
-        A)
-        11
-
-        B) 15
-
-        C) 9
-
-        D) 14'
+      value: "Examine the following code and find out the correct output sequence\u2013\r\nclass
+        Solution:\r\n    def isMatch(self, s: str, p: str) -> bool:\r\n        s_len,
+        p_len = len(s), len(p)\r\n        s_idx = p_idx = 0\r\n        star_idx =
+        s_tmp_idx = -1\r\n \r\n        while s_idx < s_len:\r\n            if p_idx
+        < p_len and p[p_idx] in ['?', s[s_idx]]:\r\n                s_idx += 1\r\n               
+        p_idx += 1\r\n        \r\n            elif p_idx < p_len and p[p_idx] ==
+        '*':\r\n                star_idx = p_idx\r\n                s_tmp_idx = s_idx\r\n               
+        p_idx += 1\r\n                              \r\n            elif star_idx
+        == -1:\r\n                return False\r\n                              \r\n               
+        p_idx = star_idx + 1\r\n                s_idx = s_tmp_idx + 1\r\n               
+        s_tmp_idx = s_idx\r\n        \r\n        return all(p[i] == '*' for i in
+        range(p_idx, p_len))\r\n\r\nInput:\r\ns=\"Death\" p=?e??\r\ns= \"Dalgona\"
+        p= *\r\ns=\"Game\" p='m'\r\n\r\nA) True, false, true\r\nB) False, true, false\r\nC)
+        False, false, true\r\nD) True, false, false\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_fontSize
-      value: 20
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_margin.y
+      value: 66.03812
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -22330,7 +22380,7 @@ PrefabInstance:
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -22410,22 +22460,22 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 557.4655
+      value: 585.7332
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 324.1155
+      value: 1105.162
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.0153
+      value: 5.3567038
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.862
+      value: 84.69307
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -22435,12 +22485,12 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.47334173
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -22480,7 +22530,7 @@ PrefabInstance:
     - target: {fileID: 5945988753429808683, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000022888184
+      value: -0.000022888184
       objectReference: {fileID: 0}
     - target: {fileID: 6261232179418946388, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -22520,12 +22570,12 @@ PrefabInstance:
     - target: {fileID: 6261232179418946388, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 280.381
+      value: 277.149
       objectReference: {fileID: 0}
     - target: {fileID: 6261232179418946388, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 182.221
+      value: 195.151
       objectReference: {fileID: 0}
     - target: {fileID: 6261232179418946388, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -22580,7 +22630,7 @@ PrefabInstance:
     - target: {fileID: 6261232179418946388, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.275
+      value: 7.128
       objectReference: {fileID: 0}
     - target: {fileID: 6261232179418946388, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -23000,7 +23050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1404303429}
-  actualAns: 9
+  actualAns: d
   glass: {fileID: 1185185787}
   questionImg: {fileID: 978073737}
   strong: 1
@@ -23698,7 +23748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 800742898}
-  actualAns: 9
+  actualAns: b
   glass: {fileID: 1308070265}
   questionImg: {fileID: 819721874}
   strong: 1
@@ -28932,6 +28982,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &1382885094 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1177139542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1393228625 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
@@ -29326,25 +29382,24 @@ PrefabInstance:
         can be tested by a number of players and each player can test any number
         of candies.
 
-        2. The specified minutes to die has been set as 15
-        minutes as well, during which any other player can not test the candies.
-        After these 15 minutes, all the players who ate the poisonous candy will
-        die. Repeat this process until the time runs out.
+        2. The specified minutes to die has been set as 15 minutes
+        as well, during which any other player can not test the candies. After these
+        15 minutes, all the players who ate the poisonous candy will die. Repeat
+        this process until the time runs out.
 
-        
 
-        Return
-        the minimum number of players that will die due to determining the poisonous
-        candy within the given time.
 
-        
+        Return the minimum number
+        of players that will die due to determining the poisonous candy within the
+        given time.
+
+
 
         A) 10
 
         B) 8
 
-        C)
-        9
+        C) 9
 
         D) 7'
       objectReference: {fileID: 0}
@@ -29747,16 +29802,17 @@ PrefabInstance:
       propertyPath: m_text
       value: "Squidverse consists of k universes numbered from 0 to k-1. In this
         multiverse, there is a path connecting every pair of universes. There are
-        m players numbered from 0 to m - 1 who are traveling through these Squidverses
+        m players numbered from 0 to m - 1 who are traveling through these universes
         to escape from the Front-Man . Each one of them will be taking a path that
         comprises a number of universes. Each of the paths taken by the players is
-        portrayed by an integer array with the number of universes in the order they
-        were visited. The player can visit the same universe more than once but it
-        would appear in the path integer array only once.\r\n\r\nThe number of universes
-        which the players can move through are 6.\r\nIf the number of players are
-        3 and their path is represented in a 2D array as:\r\nn = 6, paths = [[1,4,5],[0,2,3,1,4],[4,3,5,0]]\r\nDetermine
-        the length of the longest common subpath shared by every player\u2019s path.\r\nA)
-        2\r\nB) 3\r\nC) 0\r\nD) 1"
+        portrayed by an integer array with the number of universes, in the order
+        they were visited. The player can visit the same universe more than once
+        but it would appear in the path integer array only once.\r\n\r\nThe number
+        of universes which the players can move through are 6.\r\nIf the number of
+        players are 3 and their path is represented in a 2D array as:\r\nn = 6, \npaths
+        = [[1,4,5],[0,2,3,1,4],[4,3,5,0]]\r\nDetermine the length of the longest
+        common subpath shared by every player\u2019s path.\r\n\nA) 2\r\nB) 3\r\nC)
+        0\r\nD) 1"
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -29862,22 +29918,22 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 317.8276
+      value: 313.0396
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 810.4065
+      value: 898.0214
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.2451
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83.97556
+      value: 96.72348
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -29887,12 +29943,12 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.25979427
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.7121188
+      value: 0.00000004378969
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -30567,7 +30623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1820988369}
-  actualAns: 9
+  actualAns: D
   glass: {fileID: 1800352190}
   questionImg: {fileID: 886428472}
   strong: 0
@@ -30617,7 +30673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 2098236915}
-  actualAns: 9
+  actualAns: A
   glass: {fileID: 1803924843}
   questionImg: {fileID: 1669562313}
   strong: 1
@@ -30818,7 +30874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1798379762}
-  actualAns: 9
+  actualAns: C
   glass: {fileID: 1884230256}
   questionImg: {fileID: 390870903}
   strong: 0
@@ -31153,21 +31209,20 @@ PrefabInstance:
 
         Multiple meetings are possible.
 
-        
+
 
         If
         the first person to know the secret clue is Player 0, who tells about it
         to Player2 at time 0.
 
-        Find the number of people who know about
-        the secret clue, post all the meetings are concluded.
+        Find the number of people who know about the
+        secret clue, post all the meetings are concluded.
 
-        
 
-        A)
-        6
+        A) 6
 
-        B) 5
+        B)
+        5
 
         C) 3
 
@@ -31576,7 +31631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 510206181}
-  actualAns: 9
+  actualAns: B
   glass: {fileID: 1949811940}
   questionImg: {fileID: 1430395899}
   strong: 0
@@ -31614,7 +31669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 759914476}
-  actualAns: 9
+  actualAns: B
   glass: {fileID: 1995329907}
   questionImg: {fileID: 820155959}
   strong: 1
@@ -32099,7 +32154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1105600617}
-  actualAns: 9
+  actualAns: a
   glass: {fileID: 2086896768}
   questionImg: {fileID: 1188163562}
   strong: 0
@@ -32396,6 +32451,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 208461340608372973, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3012931
+      objectReference: {fileID: 0}
+    - target: {fileID: 208461340608372973, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3012931
+      objectReference: {fileID: 0}
+    - target: {fileID: 208461340608372973, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3012931
+      objectReference: {fileID: 0}
+    - target: {fileID: 208461340608372973, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 50.599983
       objectReference: {fileID: 0}
@@ -32417,7 +32487,17 @@ PrefabInstance:
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_text
-      value: bfgbgbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+      value: "What is the time complexity of the following:\r\n\r\nint save_from_front_man(int
+        life){\r\n        int game1 = 1;\r\n        while (game1 < size){\r\n               
+        int game2 = size;\r\nwhile (game2 > 0){\r\n        return game1 + game2;\r\n       
+        game2 = game2 / 2;\r\n}\r\ngame1 = game1 / 2;   \r\n}\r\ncout<<\u201DYou
+        are safe\u201D;\r\nreturn 0;\r\n}\r\n\r\nA)        O(logn)\r\nB)        O(n)\r\nC)       
+        O(nlogn)\r\nD)        O(log2 n)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -32426,9 +32506,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
+      propertyPath: m_margin.y
+      value: 13.957642
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
       propertyPath: m_margin.z
       value: -8.245663
       objectReference: {fileID: 0}
+    - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824137825469609925, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 3560435571875060300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_IsActive
@@ -32497,22 +32598,22 @@ PrefabInstance:
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 288.3883
+      value: 324.18
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 334.6344
+      value: 553.8347
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0007630784
+      value: -0.000027205411
       objectReference: {fileID: 0}
     - target: {fileID: 4971711347980458200, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15.1492
+      value: -47.045547
       objectReference: {fileID: 0}
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -32522,7 +32623,12 @@ PrefabInstance:
     - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5385802120828102300, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.58387244
       objectReference: {fileID: 0}
     - target: {fileID: 5693649822309242606, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -32536,13 +32642,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5746248630461317816, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3.7752
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746248630461317816, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
       propertyPath: m_SizeDelta.y
-      value: 4.4555
+      value: -43.721
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746248630461317816, guid: acbda402833a95640b79ed3b0164d9ae,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -58.625
       objectReference: {fileID: 0}
     - target: {fileID: 5746248630461317816, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 27.772
+      value: 3.6842
       objectReference: {fileID: 0}
     - target: {fileID: 6261232179418946388, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
@@ -32667,22 +32783,22 @@ PrefabInstance:
     - target: {fileID: 6515101565920099532, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3100067
+      value: 0.28534877
       objectReference: {fileID: 0}
     - target: {fileID: 6515101565920099532, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.32163197
+      value: 0.30715123
       objectReference: {fileID: 0}
     - target: {fileID: 6515101565920099532, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3100067
+      value: 0.28534877
       objectReference: {fileID: 0}
     - target: {fileID: 6515101565920099532, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 50.599983
+      value: 53.1
       objectReference: {fileID: 0}
     - target: {fileID: 6515101565920099532, guid: acbda402833a95640b79ed3b0164d9ae,
         type: 3}
